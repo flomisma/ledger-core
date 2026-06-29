@@ -1,0 +1,30 @@
+{
+  "name": "@flomisma/ledger-core",
+  "version": "0.1.0",
+  "description": "Immutable append-only event ledger with SHA-256 hash chain integrity and audit trail query interface",
+  "license": "MIT",
+  "private": false,
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": ["dist", "README.md", "LICENSE", "CHANGELOG.md"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/flomisma/ledger-core"
+  },
+  "keywords": ["ledger", "immutable", "audit-trail", "event-log", "hash-chain"],
+  "scripts": {
+    "build": "tsc",
+    "test": "echo 'No tests yet'"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.4.0"
+  }
+}
